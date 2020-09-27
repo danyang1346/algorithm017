@@ -69,7 +69,6 @@ class Solution(object):
                 slow += 1
 
 
-
 if __name__ == '__main__':
 
     sl = Solution()
@@ -79,5 +78,5 @@ if __name__ == '__main__':
     for case in test_cases:
         print('\ninput:', case)
         # sl.move_zeros_1(case)
-        sl.move_zeros_2(case)
-        print('output:', case)
+        # sl.move_zeros_2(case)
+

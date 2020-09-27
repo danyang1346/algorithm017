@@ -41,6 +41,7 @@ class Solution(object):
                 buff_map[nums[i]] = i
 
 
+
 if __name__ == '__main__':
 
     sl = Solution()
