@@ -125,10 +125,10 @@ class Solution(object):
 
 if __name__ == '__main__':
     sl = Solution()
-    test_cases = [[], [], []]
+    test_cases = [['rat', 'car'], ['anagram', 'nagaram'], ['aa', 'a']]
 
     for case in test_cases:
-        print('input:\n', 's:', case[0], 't:', case[1])
+        print('\n\ninput:', '\ns:', case[0], '\nt:', case[1])
         result = sl.is_anagram1(case[0], case[1])
         print('output:', result)
     pass
