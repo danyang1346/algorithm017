@@ -20,7 +20,7 @@
 '''
 
 class Solution(object):
-    def tow_sum(self, nums, target):
+    def two_sum(self, nums, target):
         '''
         :param nums: list[int]
         :param target: int
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     for case in test_cases:
         print('input:', 'array:', case[0], 'target:', case[1])
-        result = sl.tow_sum(case[0], case[1])
+        result = sl.two_sum(case[0], case[1])
         print('output:', result)
 
 
