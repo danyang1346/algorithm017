@@ -3,12 +3,17 @@
 
 '''
 @Author  : Dan Yang
-@Date    : 2020/10/11 21:40
+@Date    : 2020/10/30 17:09
 
 '''
+
+
+#!/usr/bin/python3
+# -*-coding:utf-8 -*-
+
 '''
-二叉树的中序遍历（亚马逊、字节跳动、微软在半年内面试中考过）
-https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
+二叉树的前序遍历（字节跳动、谷歌、腾讯在半年内面试中考过）
+https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
 '''
 
 class TreeNode(object):
@@ -34,38 +39,30 @@ def create_bt_list(lst, start):
 
 class Solution(object):
 
-    def inorder1(self, root):
-        '''
+    def preorder(self, root):
+        # 前序遍历，递归做法
+        # 时间复杂度：o(n)--所有节点只遍历一遍
+        # 空间复杂度：O(n)---树的深度
 
-        :param root:
-        :return:
-        '''
-        # 方法1：递归算法
-        # 时间复杂度：O(n)
-        # 空间复杂度：O(h) 树的深度
+        if not root:
+            return  []
+
+        return [root.val] + self.preorder(root.left) + self.preorder(root.right)
+
+    def preorder_stack(self, root):
+        # 前序遍历，堆栈做法，先放入根，再依次压入左，右
+        # 时间复杂度：遍历1遍，O(N)
+        # 空间复杂度：o(n)
         if not root:
             return []
 
-        return self.inorder1(root.left) + [root.val] + self.inorder1(root.right)
-
-    def inorder2(self, root):
-
-        # 方法2：堆栈实现
-        # 堆，先进后出，中序遍历，先左(到底)再中后右
-        # 时间复杂度O(n)
-        # 空间复杂度O(n)--栈的深度
-        if not root:
-            return []
-
-        stack = []
-        cur = root
-        ret = []
-        while cur or len(stack) > 0:
-            while  cur :
+        ret, cur, stack = [], root, []
+        while cur or stack:
+            while cur:
+                ret.append(cur.val)
                 stack.append(cur)
                 cur = cur.left
             cur = stack.pop()
-            ret.append(cur.val)
             cur = cur.right
 
         return ret
@@ -80,7 +77,7 @@ if __name__ == '__main__':
         print('input:\n', case)
         root = create_bt_list(case, 0)
 
-        result = sl.inorder2(root)
+        result = sl.preorder_stack(root)
 
         print('result:', result)
 
