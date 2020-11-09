@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bae004b-38aa-4b6f-9a2d-b186b084f41f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week_02/README.md" afterPath="$PROJECT_DIR$/Week_02/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week_02/binary_tree_inorder_traversal.py" afterPath="$PROJECT_DIR$/Week_02/binary_tree_inorder_traversal.py" />
-    </list>
+    <list default="true" id="0bae004b-38aa-4b6f-9a2d-b186b084f41f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,21 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="binary_tree_inorder_traversal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week_02/binary_tree_inorder_traversal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="59" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="binary_tree_preorder_travelsal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week_02/binary_tree_preorder_travelsal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="341">
+              <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -502,7 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week_02/binary_tree_inorder_traversal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
+        <state relative-caret-position="664">
           <caret line="59" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
@@ -510,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week_02/binary_tree_preorder_travelsal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="341">
+          <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
           <folding />
         </state>
       </provider>
